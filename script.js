@@ -15,6 +15,8 @@ function inputNegativeNumbers(){
 
 function deleteAll(){
     inputValue.value = "";
+    document.getElementById('delete').value = "AC";
+
 }
 function calculateAll(){
     const result = eval(inputValue.value);
