@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="calculator">
+        <div class="calc-head">
+            <input id="result" type="text">
+        </div>
+        <div class="calc-body">
+            <div>
+                <input type="button" class="number-btn btn-style" id="delete" onclick="deleteAll()" value="AC">
+                <input type="button" class="number-btn btn-style" onclick="inputNegativeNumbers('-')" value="+/-">
+                <input type="button" class="number-btn btn-style" onclick="inputNumbers('%')" value="%">
+                <input type="button" class="number-btn operation" onclick="inputNumbers('/')" value="/">
+            </div>
+            <div>
+                <input type="button" class="number-btn" onclick="inputNumbers('7')" value="7">
+                <input type="button" class="number-btn" onclick="inputNumbers('8')" value="8">
+                <input type="button" class="number-btn" onclick="inputNumbers('9')" value="9">
+                <input type="button" class="number-btn operation" onclick="inputNumbers('*')" value="x">
+            </div>
+            <div>
+                <input type="button" class="number-btn" onclick="inputNumbers('4')" value="4">
+                <input type="button" class="number-btn" onclick="inputNumbers('5')" value="5">
+                <input type="button" class="number-btn" onclick="inputNumbers('6')" value="6">
+                <input type="button" class="number-btn operation" onclick="inputNumbers('-')" value="-">
+            </div>
+            <div>
+                <input type="button" class="number-btn" onclick="inputNumbers('1')" value="1">
+                <input type="button" class="number-btn" onclick="inputNumbers('2')" value="2">
+                <input type="button" class="number-btn" onclick="inputNumbers('3')" value="3">
+                <input type="button" class="number-btn operation" onclick="inputNumbers('+')" value="+">
+            </div>
+            <div>
+                <input type="button" class="number-btn zero" onclick="inputNumbers('0')" value="0">
+                <input type="button" class="number-btn" onclick="inputNumbers('.')" value=".">
+                <!-- <input type="button" class="btn" value="DEL"> -->
+                <input type="button" id="equal" class="number-btn operation" onclick="calculateAll()" value="=">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
